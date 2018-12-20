@@ -273,3 +273,19 @@ nav h1 a {
 #restaurant-hours td {
   color: #666;
 }
+
+
+/* MY STYLES */
+ul#restaurants-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+div.filter-options {
+  height: unset;
+}
+
+ul#restaurants-list li {
+  padding: 30px 25px;
+}
