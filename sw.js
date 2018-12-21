@@ -1,6 +1,6 @@
 // When sw gets installed then this will run
 // How to add things into a cache
-const staticCache = 'my-cache-1';// IMPORTANT: increment the num when you change something in the cache
+const staticCache = 'SD140FinalProject-cache-1';// IMPORTANT: increment the num when you change something in the cache
 self.addEventListener('install', (e) => {
   e.waitUntil(
     caches.open(staticCache).then((cache) => {
@@ -42,7 +42,7 @@ self.addEventListener('activate', (e) => {
       console.log(cacheNames);
       return Promise.all(
         cacheNames.filter((cacheName) => {
-          return cacheName.startsWith('my-') && cacheName !== staticCache;
+          return cacheName.startsWith('SD140FinalProject-') && cacheName !== staticCache;
         })
         .map((cacheName) => {
           return caches.delete(cacheName);
