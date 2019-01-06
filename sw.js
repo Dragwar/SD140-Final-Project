@@ -27,6 +27,8 @@ self.addEventListener('install', (e) => {
           './img/10.jpg',
           'https://unpkg.com/leaflet@1.3.1/dist/leaflet.css',
           'https://unpkg.com/leaflet@1.3.1/dist/leaflet.js',
+          'https://unpkg.com/leaflet@1.3.1/dist/images/marker-icon.png',
+          'https://unpkg.com/leaflet@1.3.1/dist/images/marker-shadow.png',
           './restaurant.html?id=1',
           './restaurant.html?id=2',
           './restaurant.html?id=3',
@@ -45,6 +47,25 @@ self.addEventListener('install', (e) => {
 
 });
 
+// Might not be needed (cache pieces of the map not even all the pieces of the map for all pages)
+// Just uncheck the disable cache box to have the map automatically cache it
+// Links were taken from GET errors (in offline mode)
+/*
+  'https://api.tiles.mapbox.com/v4/mapbox.streets/12/1206/1539.jpg70?access_token=pk.eyJ1IjoiZXZlcmV0dGciLCJhIjoiY2pwd3lzdDU2MGs1MDQ4bHNldThrcnZ3YiJ9.aUrRJi0nahDPriMou3M6iw',
+  'https://api.tiles.mapbox.com/v4/mapbox.streets/16/19299/24640.jpg70?access_token=pk.eyJ1IjoiZXZlcmV0dGciLCJhIjoiY2pwd3lzdDU2MGs1MDQ4bHNldThrcnZ3YiJ9.aUrRJi0nahDPriMou3M6iw',
+
+  'https://api.tiles.mapbox.com/v4/mapbox.streets/12/1206/1540.jpg70?access_token=pk.eyJ1IjoiZXZlcmV0dGciLCJhIjoiY2pwd3lzdDU2MGs1MDQ4bHNldThrcnZ3YiJ9.aUrRJi0nahDPriMou3M6iw',
+  'https://api.tiles.mapbox.com/v4/mapbox.streets/12/1205/1539.jpg70?access_token=pk.eyJ1IjoiZXZlcmV0dGciLCJhIjoiY2pwd3lzdDU2MGs1MDQ4bHNldThrcnZ3YiJ9.aUrRJi0nahDPriMou3M6iw',
+  'https://api.tiles.mapbox.com/v4/mapbox.streets/12/1207/1539.jpg70?access_token=pk.eyJ1IjoiZXZlcmV0dGciLCJhIjoiY2pwd3lzdDU2MGs1MDQ4bHNldThrcnZ3YiJ9.aUrRJi0nahDPriMou3M6iw',
+  'https://api.tiles.mapbox.com/v4/mapbox.streets/12/1205/1540.jpg70?access_token=pk.eyJ1IjoiZXZlcmV0dGciLCJhIjoiY2pwd3lzdDU2MGs1MDQ4bHNldThrcnZ3YiJ9.aUrRJi0nahDPriMou3M6iw',
+  'https://api.tiles.mapbox.com/v4/mapbox.streets/12/1207/1540.jpg70?access_token=pk.eyJ1IjoiZXZlcmV0dGciLCJhIjoiY2pwd3lzdDU2MGs1MDQ4bHNldThrcnZ3YiJ9.aUrRJi0nahDPriMou3M6iw',
+  'https://api.tiles.mapbox.com/v4/mapbox.streets/12/1204/1539.jpg70?access_token=pk.eyJ1IjoiZXZlcmV0dGciLCJhIjoiY2pwd3lzdDU2MGs1MDQ4bHNldThrcnZ3YiJ9.aUrRJi0nahDPriMou3M6iw',
+  'https://api.tiles.mapbox.com/v4/mapbox.streets/12/1204/1540.jpg70?access_token=pk.eyJ1IjoiZXZlcmV0dGciLCJhIjoiY2pwd3lzdDU2MGs1MDQ4bHNldThrcnZ3YiJ9.aUrRJi0nahDPriMou3M6iw',
+
+  'https://api.tiles.mapbox.com/v4/mapbox.streets/16/19297/24640.jpg70?access_token=pk.eyJ1IjoiZXZlcmV0dGciLCJhIjoiY2pwd3lzdDU2MGs1MDQ4bHNldThrcnZ3YiJ9.aUrRJi0nahDPriMou3M6iw',
+  'https://api.tiles.mapbox.com/v4/mapbox.streets/16/19300/24640.jpg70?access_token=pk.eyJ1IjoiZXZlcmV0dGciLCJhIjoiY2pwd3lzdDU2MGs1MDQ4bHNldThrcnZ3YiJ9.aUrRJi0nahDPriMou3M6iw',
+  'https://api.tiles.mapbox.com/v4/mapbox.streets/16/19298/24639.jpg70?access_token=pk.eyJ1IjoiZXZlcmV0dGciLCJhIjoiY2pwd3lzdDU2MGs1MDQ4bHNldThrcnZ3YiJ9.aUrRJi0nahDPriMou3M6iw',
+*/
 
 // When the new sw gets activated this runs
 // How to delete old caches
