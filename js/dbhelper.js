@@ -9,8 +9,8 @@ class DBHelper {
    */
   static get DATABASE_URL() {
     const port = 8000 // Change this to your server port
-    // return `http://localhost:${port}/data/restaurants.json`; // For the local host testing
-    return `https://dragwar.github.io/SD140-Final-Project/data/restaurants.json`;
+    return `./data/restaurants.json`; // For the local host testing
+    // return `https://dragwar.github.io/SD140-Final-Project/data/restaurants.json`;
   }
 
   /**
