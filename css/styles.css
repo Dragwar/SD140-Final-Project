@@ -316,22 +316,22 @@ div.filter-options > h2 {
 
 }
 
-section#restaurant-container {
+.inside section#restaurant-container {
   padding: 15% 2.5% 3% 2%;
 
 }
 
-section#reviews-container {
+.inside section#reviews-container {
   padding: 3% 4% 1% 2%;
 
 }
 
-p#restaurant-address {
+.inside p#restaurant-address {
   padding-right: 5%;
 
 }
 
-#reviews-list li {
+.inside #reviews-list li {
   padding: 2.5% 3% 2%;
 
 }
@@ -364,7 +364,7 @@ p#restaurant-address {
 
   }
 
-  ul#breadcrumb {
+  .inside ul#breadcrumb {
     padding: 5px 15px;
     position: absolute;
     top: 56%;
@@ -372,7 +372,7 @@ p#restaurant-address {
 
   }
 
-  section#restaurant-container {
+  .inside section#restaurant-container {
     width: 100%;
     padding-top: 5%;
     position: relative;
@@ -380,31 +380,31 @@ p#restaurant-address {
 
   }
 
-  h1#restaurant-name {
+  .inside h1#restaurant-name {
     margin-top: 10px;
     margin-top: unset;
     margin-bottom: 5px;
 
   }
 
-  img#restaurant-img {
+  .inside img#restaurant-img {
     width: 45%;
 
   }
 
-  div.restaurant-card {
+  .inside div.restaurant-card {
     margin-top: 25px;
 
   }
 
-  div.restaurant-info {
+  .inside div.restaurant-info {
     position: relative;
     left: 46.5%;
     top: -300px;
 
   }
 
-  section#reviews-container {
+  .inside section#reviews-container {
     display: flex;
     flex-flow: row wrap;
     padding: 2% 2% 10% 2%;
@@ -417,7 +417,7 @@ p#restaurant-address {
 
   }
 
-  #reviews-list li {
+  .inside #reviews-list li {
     position: static;
     display: block;
     width: 90%;
@@ -435,28 +435,28 @@ p#restaurant-address {
 
 
 @media screen and (max-width: 690px) {
-  section#restaurant-container {
+  .inside section#restaurant-container {
     display: flex;
     flex-flow: row wrap;
 
   }
   
-  div.restaurant-info {
+  .inside div.restaurant-info {
     position: static;
 
   }
 
-  section#reviews-container {
+  .inside section#reviews-container {
     top: 300px;
 
   }
 
-  img#restaurant-img {
+  .inside img#restaurant-img {
     width: 90%;
 
   }
 
-  p#restaurant-cuisine {
+  .inside p#restaurant-cuisine {
     width: 90%;
 
   }
@@ -466,7 +466,7 @@ p#restaurant-address {
 
   }
 
-  section#reviews-container {
+  .inside section#reviews-container {
     padding-bottom: 70px;
 
   }
@@ -474,22 +474,22 @@ p#restaurant-address {
 }
 
 @media screen and (max-width: 420px) {
-  header nav {
+  .inside header nav {
     height: 120px;
 
   }
 
-  ul#breadcrumb {
+  .inside ul#breadcrumb {
     top: 72%;
 
   }
 
-  div#map {
+  .inside div#map {
     top: 40px;
 
   }
 
-  div.restaurant-card {
+  .inside div.restaurant-card {
     margin-top: 60px;
 
   }
