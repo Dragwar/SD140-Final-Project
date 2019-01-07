@@ -9,12 +9,12 @@ var markers = [];
  */
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('./sw.js')
-  .then((response) => {
-    console.log('%c SW Register... Success!', 'background-color: black; color: lightblue;', response);
-  })
-  .catch((error) => {
-    console.warn('%c SW Register... Failed.', 'background-color: black; color: lightblue;', error);
-  });
+    .then((response) => {
+      console.log('%c SW Register... Success!', 'background-color: black; color: lightblue;', response);
+    })
+    .catch((error) => {
+      console.warn('%c SW Register... Failed.', 'background-color: black; color: lightblue;', error);
+    });
 }
 
 /**
@@ -86,10 +86,10 @@ fillCuisinesHTML = (cuisines = self.cuisines) => {
  */
 initMap = () => {
   self.newMap = L.map('map', {
-        center: [40.722216, -73.987501],
-        zoom: 12,
-        scrollWheelZoom: false
-      });
+    center: [40.722216, -73.987501],
+    zoom: 12,
+    scrollWheelZoom: false
+  });
   L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.jpg70?access_token={mapboxToken}', {
     mapboxToken: 'pk.eyJ1IjoiZXZlcmV0dGciLCJhIjoiY2pwd3lzdDU2MGs1MDQ4bHNldThrcnZ3YiJ9.aUrRJi0nahDPriMou3M6iw',
     maxZoom: 18,
@@ -210,7 +210,7 @@ addMarkersToMap = (restaurants = self.restaurants) => {
     self.markers.push(marker);
   });
 
-} 
+}
 /* addMarkersToMap = (restaurants = self.restaurants) => {
   restaurants.forEach(restaurant => {
     // Add marker to the map
