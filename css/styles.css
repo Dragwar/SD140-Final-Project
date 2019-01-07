@@ -348,8 +348,9 @@ div.filter-options > h2 {
 }
 
 @media screen and (max-width: 800px) {
-  body {
+  .inside body {
     overflow-x: hidden;
+    background-color: #f3f3f3;
 
   }
 
@@ -401,6 +402,7 @@ div.filter-options > h2 {
     position: relative;
     left: 46.5%;
     top: -300px;
+    max-width: fit-content;
 
   }
 
@@ -427,7 +429,7 @@ div.filter-options > h2 {
   .inside #footer {
     bottom: -50px;
     position: absolute;
-    width: 100%;
+    width: 101%;
 
   }
 
