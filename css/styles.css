@@ -323,6 +323,7 @@ div.filter-options > h2 {
 
 .inside section#reviews-container {
   padding: 3% 4% 1% 2%;
+  border: unset;
 
 }
 
@@ -416,6 +417,7 @@ div.filter-options > h2 {
     outline: 1px solid #d9d9d9;
     border: unset;
     border-top: 1px solid #fff;
+    background-color: #f3f3f3;
 
   }
 
