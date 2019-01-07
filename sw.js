@@ -1,6 +1,6 @@
 // When sw gets installed then this will run
 // How to add things into a cache
-const staticCache = 'SD140FinalProject-cache-1';// IMPORTANT: increment the num when you change something in the cache
+const staticCache = 'SD140FinalProject-cache-2';// IMPORTANT: increment the num when you change something in the cache
 self.addEventListener('install', (e) => {
   e.waitUntil(
     caches.open(staticCache).then((cache) => {
@@ -38,7 +38,18 @@ self.addEventListener('install', (e) => {
           './restaurant.html?id=7',
           './restaurant.html?id=8',
           './restaurant.html?id=9',
-          './restaurant.html?id=10'
+          './restaurant.html?id=10',
+          'https://api.tiles.mapbox.com/v4/mapbox.streets/12/1207/1540.jpg70?access_token=pk.eyJ1IjoiZXZlcmV0dGciLCJhIjoiY2pwd3lzdDU2MGs1MDQ4bHNldThrcnZ3YiJ9.aUrRJi0nahDPriMou3M6iw',
+          'https://api.tiles.mapbox.com/v4/mapbox.streets/12/1205/1540.jpg70?access_token=pk.eyJ1IjoiZXZlcmV0dGciLCJhIjoiY2pwd3lzdDU2MGs1MDQ4bHNldThrcnZ3YiJ9.aUrRJi0nahDPriMou3M6iw',
+          'https://api.tiles.mapbox.com/v4/mapbox.streets/12/1207/1539.jpg70?access_token=pk.eyJ1IjoiZXZlcmV0dGciLCJhIjoiY2pwd3lzdDU2MGs1MDQ4bHNldThrcnZ3YiJ9.aUrRJi0nahDPriMou3M6iw',
+          'https://api.tiles.mapbox.com/v4/mapbox.streets/12/1205/1539.jpg70?access_token=pk.eyJ1IjoiZXZlcmV0dGciLCJhIjoiY2pwd3lzdDU2MGs1MDQ4bHNldThrcnZ3YiJ9.aUrRJi0nahDPriMou3M6iw',
+          'https://api.tiles.mapbox.com/v4/mapbox.streets/12/1206/1539.jpg70?access_token=pk.eyJ1IjoiZXZlcmV0dGciLCJhIjoiY2pwd3lzdDU2MGs1MDQ4bHNldThrcnZ3YiJ9.aUrRJi0nahDPriMou3M6iw',
+          './app-icons/favicon.ico',
+          './app-icons/favicon-32x32.png',
+          './app-icons/favicon-16x16.png',
+          './app-icons/favicon-96x96.png',
+          './app-icons/android-icon-144x144.png',
+          './app-icons/android-icon-192x192.png'
         ]
       );
     })
